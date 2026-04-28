@@ -43,7 +43,7 @@ export const programs: Program[] = [
     subtitle: "My Tree, My Life",
     description:
       "A people-powered environmental restoration movement that makes tree planting a symbol of resilience, converging environmental restoration, economic empowerment, and social progress in rural communities.",
-    image: "/what we do/mti wangu.jpg",
+    image: "/what-we-do/mti-wangu.jpg",
     badge: "Environment",
     challenge:
       "Deforestation and tree loss, limited community engagement in conservation, and underleveraging tree planting for economic growth.",
@@ -77,7 +77,7 @@ export const programs: Program[] = [
     subtitle: "Protecting Pollinators, Empowering Communities",
     description:
       "Empowering rural communities to adopt sustainable beekeeping practices that conserve forests, promote reforestation, and support local livelihoods.",
-    image: "/what we do/bees.jpg",
+    image: "/what-we-do/bees.jpg",
     badge: "Livelihoods",
     challenge:
       "Deforestation, habitat loss, and declining pollinator populations threaten ecosystem balance, biodiversity, food security, and livelihoods.",
@@ -109,7 +109,7 @@ export const programs: Program[] = [
     subtitle: "A Cyclical, Self-Sustaining Livestock Credit System",
     description:
       "A community-based scheme managing a reserve of goats, extending them to members for breeding, and returning offspring to the bank to pass on to another member.",
-    image: "/what we do/goats.jpg",
+    image: "/what-we-do/goats.jpg",
     badge: "Livestock",
     challenge:
       "Smallholder farmers' overdependence on crop farming exposes them to climate shocks, price volatility, and income seasonality — with no buffer during planting-to-harvest gaps.",
@@ -187,7 +187,7 @@ export const programs: Program[] = [
     subtitle: "Solidarity in Action",
     description:
       "Self-sustaining financial platforms where community members pool resources, support each other financially and socially, and foster unity and collective empowerment.",
-    image: "/what we do/community.jpg",
+    image: "/what-we-do/community.jpg",
     badge: "Finance",
     challenge:
       "Rural communities face limited access to credit, savings, and insurance due to lack of collateral, limited financial literacy, and distant formal institutions — trapping them in poverty, high-interest loans, and vulnerability to shocks.",
@@ -296,7 +296,7 @@ export const programs: Program[] = [
     subtitle: "The Resilient Farmer",
     description:
       "A game-changing initiative synthesizing climate-smart practices, precision agriculture, market linkage access, and value addition strengthening to boost prosperity while protecting the planet.",
-    image: "/what we do/mazie farming.jpg",
+    image: "/what-we-do/mazie-farming.jpg",
     badge: "Agriculture",
     challenge:
       "Smallholder farmers battle resource depletion, high input costs, insufficient value chains, and limited access to modern technology, climate information, extension services, and markets. Climate change exacerbates these issues with unpredictable weather, droughts, floods, and pests.",
