@@ -12,7 +12,7 @@ interface ProgramCardProps {
   description: string;
   image: string;
   badge: string;
-  href?: string;
+  slug: string;
   className?: string;
 }
 
@@ -22,7 +22,7 @@ export function ProgramCard({
   description,
   image,
   badge,
-  href = "#",
+  slug,
   className,
 }: ProgramCardProps) {
   return (
@@ -34,8 +34,8 @@ export function ProgramCard({
       whileHover={{ y: -4 }}
       transition={{ duration: 0.3 }}
     >
-      <Link href={href} className="block">
-        <div className="relative h-64 md:h-80 overflow-hidden">
+      <Link href={`/programs/${slug}/`} className="block">
+        <div className="relative h-64 md:h-72 overflow-hidden">
           <Image
             src={image}
             alt={title}
@@ -54,7 +54,7 @@ export function ProgramCard({
           <h3 className="font-display text-2xl md:text-[28px] font-bold text-deep-forest mb-3">
             {title}
           </h3>
-          <p className="text-charcoal/80 text-base leading-relaxed mb-4">
+          <p className="text-charcoal/80 text-base leading-relaxed mb-4 line-clamp-3">
             {description}
           </p>
           <span className="inline-flex items-center gap-2 text-primary-green font-semibold group-hover:gap-3 transition-all">

@@ -24,6 +24,8 @@ import { StatCounter } from "./components/stat-counter";
 import { TheoryOfChange } from "./components/theory-of-change";
 import { Button } from "./components/button";
 import { LogoMarquee } from "./components/logo-marquee";
+import { ProgramCard } from "./components/program-card";
+import { getFeaturedPrograms } from "./lib/programs-data";
 import { cn } from "./lib/utils";
 
 const empowermentCards = [
@@ -224,6 +226,53 @@ export default function HomePage() {
                 </motion.div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Programs */}
+      <section className="py-20 md:py-32 lg:py-40 bg-warm-sand">
+        <div className="max-w-[1280px] mx-auto px-6">
+          <SectionReveal className="text-center mb-16">
+            <p className="label-text text-earth-clay mb-4">Our Programs</p>
+            <h2 className="headline-section text-4xl md:text-5xl text-deep-forest mb-6">
+              Creating Impact From the Ground Up
+            </h2>
+            <p className="text-lg text-charcoal/80 max-w-[700px] mx-auto">
+              Each program is designed to empower rural communities, restore the
+              environment, and build lasting economic resilience.
+            </p>
+          </SectionReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {getFeaturedPrograms(3).map((program, index) => (
+              <motion.div
+                key={program.slug}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                }}
+              >
+                <ProgramCard
+                  title={program.title}
+                  subtitle={program.subtitle}
+                  description={program.description}
+                  image={program.image}
+                  badge={program.badge}
+                  slug={program.slug}
+                />
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Button variant="outline-dark" href="/programs/">
+              View All Programs
+            </Button>
           </div>
         </div>
       </section>

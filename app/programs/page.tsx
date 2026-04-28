@@ -6,57 +6,7 @@ import { Navigation } from "../components/navigation";
 import { Footer } from "../components/footer";
 import { SectionReveal } from "../components/section-reveal";
 import { ProgramCard } from "../components/program-card";
-
-const programs = [
-  {
-    title: "Self-Help Groups (SHGs)",
-    subtitle: "The Foundation",
-    description:
-      "Community-identified model to fight poverty and grow shared prosperity. SHGs bring neighbors together to save, lend, support, and dream collectively.",
-    image: "/cooperative group farming.jpg",
-    badge: "SHGs",
-  },
-  {
-    title: "Climate-Smart Agriculture",
-    subtitle: "Growing Resilience",
-    description:
-      "Sustainable farming practices that increase yields while protecting the planet. From conservation agriculture to agroforestry, we help farmers thrive with nature.",
-    image: "/Tanzania woman farmer.jpg",
-    badge: "Agriculture",
-  },
-  {
-    title: "Entrepreneurship & Business Development",
-    subtitle: "From Savings to Enterprises",
-    description:
-      "Transforming small savings into thriving businesses through BSGs and VSLAs. We provide training, mentorship, and market linkages for rural entrepreneurs.",
-    image: "/Tanzania rural market.jpg",
-    badge: "Business",
-  },
-  {
-    title: "Environmental Conservation",
-    subtitle: "Restoring the Earth",
-    description:
-      "Tree planting, natural resource management, and ecosystem restoration. Over 550,000 trees planted and counting—healing the land for future generations.",
-    image: "/tree planting hands soil seedling.jpg",
-    badge: "Conservation",
-  },
-  {
-    title: "Youth Empowerment",
-    subtitle: "The Next Generation",
-    description:
-      "Skills, leadership, and opportunities for young game-changers. We invest in rural youth as the architects of tomorrow's thriving communities.",
-    image: "/cheerful-african-guy-uniform-pruning-green-bushes.jpg",
-    badge: "Youth",
-  },
-  {
-    title: "Women's Economic Empowerment",
-    subtitle: "Leading the Change",
-    description:
-      "Trailblazing programs that put women at the center of rural transformation. When women thrive, families flourish and communities transform.",
-    image: "/tanznaia woman farmr.jpg",
-    badge: "Women",
-  },
-];
+import { programs } from "../lib/programs-data";
 
 export default function ProgramsPage() {
   return (
@@ -83,7 +33,7 @@ export default function ProgramsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Programs Built With Communities
+            Our Programs
           </motion.h1>
           <motion.p
             className="text-xl text-white/90 max-w-[700px] mx-auto"
@@ -91,7 +41,9 @@ export default function ProgramsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.35 }}
           >
-            Every initiative starts with listening. Every solution is co-created.
+            Welcome to the heart of our mission. Each program is designed to
+            empower rural communities, restore the environment, and build lasting
+            economic resilience.
           </motion.p>
         </div>
       </section>
@@ -102,14 +54,14 @@ export default function ProgramsPage() {
           <SectionReveal className="text-center mb-16">
             <p className="label-text text-earth-clay mb-4">What We Do</p>
             <h2 className="headline-section text-4xl md:text-5xl text-deep-forest mb-6">
-              Our Programs
+              Programs Built With Communities
             </h2>
           </SectionReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {programs.map((program, index) => (
               <motion.div
-                key={program.title}
+                key={program.slug}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
@@ -125,6 +77,7 @@ export default function ProgramsPage() {
                   description={program.description}
                   image={program.image}
                   badge={program.badge}
+                  slug={program.slug}
                 />
               </motion.div>
             ))}
