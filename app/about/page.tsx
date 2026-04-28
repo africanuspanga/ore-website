@@ -31,7 +31,7 @@ const timelineNodes = [
     year: "2025",
     title: "A Decade of Impact",
     description:
-      "Recognized for co-creating solutions across Rural Tanzania. We launched our 2030 Strategy, setting bold goals for the next chapter of transformation.",
+      "Recognized for co-creating solutions across Kagera Region. We launched our 2030 Strategy, setting bold goals for the next chapter of transformation.",
   },
 ];
 
@@ -168,7 +168,7 @@ export default function AboutPage() {
                 As we celebrate a decade of impact, we are setting our sights on
                 2030. Our strategy is bold: scale our proven models, deepen our
                 community reach, and forge even stronger partnerships to unlock
-                rural potential across Tanzania and beyond.
+                rural potential across Kagera Region.
               </p>
               <p className="text-charcoal/80 text-lg leading-relaxed mb-8">
                 We believe the next decade will be even more transformative. With

@@ -23,7 +23,6 @@ import { SectionReveal } from "./components/section-reveal";
 import { StatCounter } from "./components/stat-counter";
 import { TheoryOfChange } from "./components/theory-of-change";
 import { Button } from "./components/button";
-import { LogoMarquee } from "./components/logo-marquee";
 import { ProgramCard } from "./components/program-card";
 import { getFeaturedPrograms } from "./lib/programs-data";
 import { cn } from "./lib/utils";
@@ -80,7 +79,7 @@ const icePillars = [
 ];
 
 const stats = [
-  { value: 245000, suffix: "+", label: "Lives Touched", supporting: "Across rural Tanzania" },
+  { value: 245000, suffix: "+", label: "Lives Touched", supporting: "Across Kagera Region" },
   { value: 550000, suffix: "+", label: "Trees for Tomorrow", supporting: "Restoring ecosystems" },
   { value: 411, suffix: "", label: "Ventures Flourishing", supporting: "From savings to enterprises" },
   { value: 113, suffix: "%", label: "Average Rise", supporting: "In household earnings" },
@@ -132,7 +131,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
-            Since 2015 — Rural Tanzania
+            Since 2015 — Kagera Region, Tanzania
           </motion.p>
 
           <motion.h1
@@ -425,14 +424,14 @@ export default function HomePage() {
             >
               <p className="label-text text-earth-clay mb-4">Our Story</p>
               <h2 className="headline-section text-3xl md:text-4xl lg:text-[42px] text-deep-forest mb-6">
-                From Neighbors to a National Force
+                From Neighbors to a Community Force
               </h2>
               <p className="text-charcoal/80 text-lg leading-relaxed mb-8">
                 We began as neighbours living the rural reality—woven into villages,
                 listening deeply, amplifying local voices, and co-creating solutions.
                 What started with one program and philanthropic support from the USA
                 has grown into a community-anchored NGO recognized for transforming
-                lives across Rural Tanzania.
+                lives across Kagera Region.
               </p>
               <Button variant="text-link" href="/about/" showArrow>
                 Read Our Full Journey
@@ -454,19 +453,6 @@ export default function HomePage() {
 
           <TheoryOfChange />
         </div>
-      </section>
-
-      {/* Partner Logos Marquee */}
-      <section className="py-16 md:py-20 bg-white border-y border-charcoal/10 overflow-hidden">
-        <div className="max-w-[1280px] mx-auto px-6 mb-10">
-          <SectionReveal className="text-center">
-            <p className="label-text text-earth-clay mb-2">Trusted By</p>
-            <h2 className="headline-section text-2xl md:text-3xl text-deep-forest">
-              Partners & Collaborators
-            </h2>
-          </SectionReveal>
-        </div>
-        <LogoMarquee speed={40} />
       </section>
 
       {/* CTA - Join the Movement */}

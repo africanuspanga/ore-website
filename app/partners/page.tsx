@@ -7,38 +7,25 @@ import { Footer } from "../components/footer";
 import { SectionReveal } from "../components/section-reveal";
 import { ContactForm } from "../components/contact-form";
 import { Handshake, Building2, Heart } from "lucide-react";
-import { PartnerLogosGrid } from "../components/partner-logos";
-
 const partnershipTypes = [
   {
     icon: Handshake,
-    title: "Strategic Partners",
+    title: "Local Collaborators",
     description:
-      "Long-term collaborations that shape our organizational direction, co-design programs, and invest in our shared vision for rural transformation.",
+      "Community leaders, local government, and grassroots organizations who help us reach families and make every program count.",
   },
   {
     icon: Building2,
-    title: "Implementing Partners",
+    title: "Friends & Volunteers",
     description:
-      "On-ground execution partners who bring technical expertise, local knowledge, and operational capacity to deliver programs at scale.",
+      "Neighbors, church groups, and local volunteers who lend their time, knowledge, and hearts to our work.",
   },
   {
     icon: Heart,
-    title: "Funding Partners",
+    title: "Supporters",
     description:
-      "Philanthropic and institutional supporters who provide the financial backbone for our programs, research, and organizational growth.",
+      "Individuals and small donors who believe in our mission and keep our programs running.",
   },
-];
-
-const currentPartners = [
-  "Global Green Grants",
-  "Tanzania Rural Development",
-  "East African Community Fund",
-  "Climate Action Network",
-  "Women's World Banking",
-  "Agricultural Research Institute",
-  "Local Government Authority",
-  "International Development Partners",
 ];
 
 export default function PartnersPage() {
@@ -74,8 +61,8 @@ export default function PartnersPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.35 }}
           >
-            Our mission is achieved through collaboration. We engage policymakers,
-            academia, government, funders, civil society, and the private sector.
+            Our mission is achieved through collaboration. We work hand-in-hand with
+            local leaders, community members, and small supporters who believe in our vision.
           </motion.p>
         </div>
       </section>
@@ -123,20 +110,6 @@ export default function PartnersPage() {
         </div>
       </section>
 
-      {/* Current Partners Grid */}
-      <section className="py-20 md:py-32 lg:py-40 bg-sage-light">
-        <div className="max-w-[1280px] mx-auto px-6">
-          <SectionReveal className="text-center mb-16">
-            <p className="label-text text-earth-clay mb-4">Our Network</p>
-            <h2 className="headline-section text-4xl md:text-5xl text-deep-forest mb-6">
-              Current Partners
-            </h2>
-          </SectionReveal>
-
-          <PartnerLogosGrid />
-        </div>
-      </section>
-
       {/* Become a Partner CTA */}
       <section className="py-20 md:py-32 lg:py-40 bg-warm-sand">
         <div className="max-w-[1280px] mx-auto px-6">
@@ -152,10 +125,9 @@ export default function PartnersPage() {
                 Join Our Ecosystem
               </h2>
               <p className="text-charcoal/80 text-lg leading-relaxed mb-8">
-                Whether you represent an organization, a funding body, or a research
-                institution—we would love to explore how we can create impact
-                together. Fill out the form and our partnerships team will be in
-                touch.
+                Whether you want to volunteer, donate, or simply learn more about our
+                work—we would love to hear from you. Send us a message and we will
+                get back to you as soon as we can.
               </p>
               <ContactForm />
             </motion.div>

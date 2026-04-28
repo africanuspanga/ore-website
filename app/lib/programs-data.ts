@@ -375,7 +375,7 @@ export const programs: Program[] = [
       {
         title: "Stakeholder Engagements",
         content:
-          "Leveraging strategic positioning to engage local government authorities, NGOs, international organizations, research institutions, financial institutions, policymakers, agro-dealers, and partners.",
+          "Working closely with local government and community leaders to support farmers with practical training and resources.",
       },
     ],
     expectedOutcomes: [

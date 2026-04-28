@@ -75,7 +75,7 @@ export function Footer() {
               className="h-12 w-auto object-contain mb-4"
             />
             <p className="text-white/70 text-sm leading-relaxed">
-              Unlocking rural potential in Tanzania since 2015. Co-creating
+              Unlocking rural potential in Kagera Region since 2015. Co-creating
               solutions with communities for climate resilience and sustainable
               livelihoods.
             </p>
@@ -119,7 +119,7 @@ export function Footer() {
           <div>
             <h4 className="label-text text-white/90 mb-4">Connect</h4>
             <div className="space-y-3 text-sm text-white/70">
-              <p>Rural Tanzania</p>
+              <p>Kagera Region, Tanzania</p>
               <p>info@ore-tz.org</p>
               <p>+255 123 456 789</p>
             </div>

@@ -644,7 +644,7 @@ export default function ProgramDetailClient({
             </h2>
             <p className="text-white/90 text-lg max-w-[600px] mx-auto mb-8">
               Partner with us to expand this initiative and create lasting change
-              in rural Tanzania.
+              in Kagera Region.
             </p>
             <Link
               href="/contact/"

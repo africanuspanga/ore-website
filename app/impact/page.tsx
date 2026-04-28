@@ -30,28 +30,28 @@ const testimonials = [
     quote:
       "Before joining the SHG, I struggled to feed my family. Now I run a small business, my children go to school, and I mentor other women in my village.",
     name: "Mariam J.",
-    role: "SHG Member, Morogoro Region",
+    role: "SHG Member, Kagera Region",
     image: "/istockphoto-1081976928-612x612.jpg",
   },
   {
     quote:
       "The climate-smart training changed everything. My yields doubled, and I learned to farm in harmony with the land instead of fighting it.",
     name: "John M.",
-    role: "Farmer, Iringa Region",
+    role: "Farmer, Kagera Region",
     image: "/istockphoto-1094246926-612x612.jpg",
   },
   {
     quote:
       "As a young person, I felt I had no future in the village. ORE helped me see that the future is built right here, by us.",
     name: "Grace T.",
-    role: "Youth Leader, Dodoma Region",
+    role: "Youth Leader, Kagera Region",
     image: "/istockphoto-2241357558-612x612.jpg",
   },
   {
     quote:
       "We planted trees as a community, and now our rivers flow again. Our children will inherit a greener, healthier home.",
     name: "Abdul K.",
-    role: "Conservation Champion, Tanga Region",
+    role: "Conservation Champion, Kagera Region",
     image: "/istockphoto-2246613625-612x612.jpg",
   },
 ];

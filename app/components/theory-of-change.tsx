@@ -26,7 +26,7 @@ const defaultStages: Stage[] = [
     shortText: "Capacity Building, Resources, Partnerships",
     fullText:
       "We invest in capacity building, provide access to resources, and forge partnerships & networks that enable rural communities to thrive.",
-    stats: ["50+ training programs", "20+ partner organizations"],
+    stats: ["50+ training programs", "Local community-led"],
   },
   {
     id: "activities",

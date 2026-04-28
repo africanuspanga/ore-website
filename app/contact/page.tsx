@@ -92,7 +92,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-deep-forest">Location</p>
-                    <p className="text-charcoal/70">Rural Tanzania</p>
+                    <p className="text-charcoal/70">Kagera Region, Tanzania</p>
                   </div>
                 </div>
 
@@ -137,14 +137,14 @@ export default function ContactPage() {
               {/* Map */}
               <div className="rounded-2xl overflow-hidden aspect-video bg-sage-light relative">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8127032.570808566!2d30.09976505!3d-6.35526885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184b51314869cc13%3A0xa57195f81d5e0c50!2sTanzania!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                  src="https://maps.google.com/maps?q=Kagera+Region,+Tanzania&t=&z=9&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0, filter: "hue-rotate(120deg) saturate(0.7)" }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="ORE Location - Tanzania"
+                  title="ORE Location - Kagera Region, Tanzania"
                 />
               </div>
             </motion.div>

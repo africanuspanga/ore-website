@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ORE — Unlocking Rural Potential | Rural Tanzania Since 2015",
+  title: "ORE — Unlocking Rural Potential | Kagera Region, Tanzania Since 2015",
   description:
-    "ORE is a community-anchored NGO operating in Rural Tanzania since 2015. We unlock rural potential through climate-smart agriculture, entrepreneurship, and community-led development.",
+    "ORE is a community-anchored NGO operating in Kagera Region, Tanzania since 2015. We unlock rural potential through climate-smart agriculture, entrepreneurship, and community-led development.",
   keywords: [
     "NGO",
     "Tanzania",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ORE — Unlocking Rural Potential",
     description:
-      "A community-anchored NGO transforming rural Tanzania since 2015.",
+      "A community-anchored NGO transforming Kagera Region, Tanzania since 2015.",
     type: "website",
     locale: "en_US",
     siteName: "ORE",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ORE — Unlocking Rural Potential",
     description:
-      "A community-anchored NGO transforming rural Tanzania since 2015.",
+      "A community-anchored NGO transforming Kagera Region, Tanzania since 2015.",
   },
   robots: {
     index: true,
